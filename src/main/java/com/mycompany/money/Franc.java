@@ -1,10 +1,7 @@
 package com.mycompany.money;
 
 class Franc extends Money {
-    Franc(int amount) {
-        this.amount = amount;
-    }
-    Franc times(int multiplier) {
-        return new Franc(amount * multiplier);
+    Franc(int amount, String currency) {
+        super(amount, currency);
     }
 }
